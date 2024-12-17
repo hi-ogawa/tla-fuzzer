@@ -15,32 +15,36 @@ This is a fuzzer to test the correctness of various [top-level await](https://gi
 
 Variant: simple
 
-* Custom module registry algorithm: ✅ Same (100% same)
 * Webpack 5.75.0: ✅ Same (100% same)
-* Import becomes inline await: 🚫 Different (80% same)
-* Rollup 3.7.4: 🚫 Different (80% same)
-* SystemJS 6.13.0: 🚫 Different (67% same)
+* Custom module registry algorithm: 🚫 Different (99% same)
+* Import becomes inline await: 🚫 Different (84% same)
+* Vite 6.0.3: 🚫 Different (84% same)
+* Rollup 3.7.4: 🚫 Different (84% same)
+* SystemJS 6.13.0: 🚫 Different (66% same)
 
 Variant: trailing promise
 
 * Webpack 5.75.0: ✅ Same (100% same)
 * Custom module registry algorithm: 🚫 Different (100% same)
-* SystemJS 6.13.0: 🚫 Different (40% same)
-* Rollup 3.7.4: 🚫 Different (14% same)
-* Import becomes inline await: 🚫 Different (11% same)
+* SystemJS 6.13.0: 🚫 Different (39% same)
+* Rollup 3.7.4: 🚫 Different (13% same)
+* Import becomes inline await: 🚫 Different (10% same)
+* Vite 6.0.3: 🚫 Different (10% same)
 
 Variant: cyclic
 
-* Custom module registry algorithm: 🚫 Different (99% same)
-* Webpack 5.75.0: 🚫 Different (99% same)
-* SystemJS 6.13.0: 🚫 Different (85% same)
-* Import becomes inline await: 🚫 Different (67% same)
-* Rollup 3.7.4: 🚫 Different (67% same)
+* Webpack 5.75.0: 🚫 Different (98% same)
+* Custom module registry algorithm: 🚫 Different (98% same)
+* SystemJS 6.13.0: 🚫 Different (81% same)
+* Import becomes inline await: 🚫 Different (65% same)
+* Vite 6.0.3: 🚫 Different (65% same)
+* Rollup 3.7.4: 🚫 Different (65% same)
 
 Variant: cyclic, trailing promise
 
-* Custom module registry algorithm: 🚫 Different (99% same)
+* Custom module registry algorithm: 🚫 Different (100% same)
 * Webpack 5.75.0: 🚫 Different (99% same)
 * SystemJS 6.13.0: 🚫 Different (46% same)
-* Rollup 3.7.4: 🚫 Different (22% same)
-* Import becomes inline await: 🚫 Different (20% same)
+* Import becomes inline await: 🚫 Different (21% same)
+* Vite 6.0.3: 🚫 Different (21% same)
+* Rollup 3.7.4: 🚫 Different (19% same)

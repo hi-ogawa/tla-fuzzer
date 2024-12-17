@@ -4,6 +4,7 @@
     "rollup": "3.7.4",
     "systemjs": "6.13.0",
     "typescript": "4.9.4",
+    "vite": "^6.0.3",
     "webpack": "5.75.0"
   }
 }

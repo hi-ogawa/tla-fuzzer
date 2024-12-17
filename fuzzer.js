@@ -8,11 +8,13 @@ import { registryStrategy } from './strategy.registry.js'
 import { rollupStrategy } from './strategy.rollup.js'
 import { webpackStrategy } from './strategy.webpack.js'
 import { systemJSStrategy } from './strategy.system.js'
+import { viteModuleRunnerStrategy } from './strategy.vite.js'
 
 const strategyToMatch = nativeStrategy;
 
 const strategies = [
   awaitStrategy,
+  viteModuleRunnerStrategy,
   registryStrategy,
   rollupStrategy,
   webpackStrategy,
